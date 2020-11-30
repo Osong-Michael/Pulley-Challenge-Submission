@@ -1,0 +1,116 @@
+tbody {
+	width: 500px;
+	height: 550px;
+	background: #ffffff;
+	opacity: 0.5;
+	box-shadow: 0px 2px 6px 4px rgba(189, 170, 165, 0.1);
+	border-radius: 9px;
+	padding: 20px 25px;
+	position: absolute;
+	right: 5%;
+	bottom: -100%;
+	overflow-y: scroll;
+	box-sizing: border-box;
+	transition: bottom ease-in 1s;
+	text-align: start;
+}
+
+tbody::-webkit-scrollbar {
+	display: none;
+}
+
+tbody {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.container {
+	position: relative;
+	height: 600px;
+	background-color: #e1ddd7;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+#name {
+	padding: 30px 40px;
+	font-size: 14px;
+	font-family: 'Amethysta', serif;
+	font-weight: lighter;
+	color: #8a8070;
+	cursor: pointer;
+}
+
+#query-form {
+	position: absolute;
+	top: 40%;
+	left: 20%;
+	width: 450px;
+	overflow: hidden;
+}
+
+#query {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	width: 400px;
+	font-size: 22px;
+	color: #8a8070;
+	font-family: 'Castoro', serif;
+	letter-spacing: 0.1rem;
+	padding: 0.5rem calc(10px + 0.2rem) 0.5rem 0.5rem;
+	-webkit-appearance: none;
+}
+
+#query:focus {
+	outline: none;
+}
+
+#query::placeholder {
+	font-size: 27px;
+	font-weight: 600;
+	color: #8a8070;
+	font-family: 'Castoro', serif;
+}
+
+#query:not(:placeholder-shown) ~ #btn {
+	transform: translateX(calc(-1 * 100px));
+}
+
+#btn {
+	border: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	transition: 0.2s;
+	background: transparent;
+	color: #8a8070;
+	height: 100%;
+	outline: none;
+}
+
+#design-under {
+	height: 80px;
+	width: 370px;
+	position: absolute;
+	top: 45%;
+	left: 20%;
+	transition: left ease-out 1s;
+}
+
+#design-under img {
+	height: 100%;
+	width: 100%;
+}
+
+#writer {
+	position: absolute;
+	height: 400px;
+	bottom: 0;
+	right: 0;
+	transition: ease-out 1s;
+}
+
+#writer img {
+	height: 100%;
+}
